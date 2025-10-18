@@ -74,7 +74,7 @@ class MyDataset(Dataset):
         self.sft_method = data_args.sft_method
         self.prompt_id = data_args.prompt_id
 
-        data_tag = data_args.sft_method
+        data_tag = data_args.sft_method.value
         if data_args.prompt_id != 0:
             data_tag += f'_p{data_args.prompt_id}'
 
@@ -245,10 +245,12 @@ class MyDataset(Dataset):
         return self.data[idx]
 
 
-if __name__ == '__main__':
-    parser = HfArgumentParser((DataArguments))
-    data_args = parser.parse_args_into_dataclasses()
-    data_args.prompt_id = 1
-    data_args.train_data_path = ''
 
+if __name__ == '__main__':
+    parser = HfArgumentParser((DataArguments,))  # Note the comma to make it a tuple
+    (data_args,) = parser.parse_args_into_dataclasses()  # Unpack the tuple
+    data_args.prompt_id = 3
+    data_args.train_data_path = r'/workspace/honesty/data/training_data/triviaqa_13b.jsonl' 
+    data_args.eval_data_path = r'/workspace/honesty/data/evaluation_data/nonambigqa.jsonl'
+    data_args.sft_method= SFTMethod.CONFIDENCE_VERB
     train_dataset = MyDataset(data_args, split='train')
