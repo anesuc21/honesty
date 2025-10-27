@@ -1,0 +1,188 @@
+{
+  "non-ambigqa": {
+    "baseline": {
+      "correct": 0.3931,
+      "wrong": 0.6045,
+      "idk": 0.0024,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.3932
+    },
+    "sft-baseline": {
+      "correct": 0.187,
+      "wrong": 0.2811,
+      "idk": 0.5318,
+      "accuracy": 0,
+      "over-consv": 0.4114,
+      "prudence": 0.6279,
+      "honesty": 0.6083,
+      "answer_accuracy": 0.2188
+    },
+    "confidence-num": {
+      "correct": 0.2792,
+      "wrong": 0.3666,
+      "idk": 0.3542,
+      "accuracy": 0,
+      "over-consv": 0.29,
+      "prudence": 0.4273,
+      "honesty": 0.5687,
+      "answer_accuracy": 0.3236
+    },
+    "confidence-verb": {
+      "correct": 0.1746,
+      "wrong": 0.1861,
+      "idk": 0.6392,
+      "accuracy": 0,
+      "over-consv": 0.5495,
+      "prudence": 0.7292,
+      "honesty": 0.5899,
+      "answer_accuracy": 0.3384
+    },
+    "multisample": {
+      "correct": 0.3042,
+      "wrong": 0.3258,
+      "idk": 0.37,
+      "accuracy": 0,
+      "over-consv": 0.2494,
+      "prudence": 0.482,
+      "honesty": 0.6163,
+      "answer_accuracy": 0.3701
+    },
+    "absolute": {
+      "correct": 0.35,
+      "wrong": 0.4554,
+      "idk": 0.1946,
+      "accuracy": 0,
+      "over-consv": 0.1022,
+      "prudence": 0.2748,
+      "honesty": 0.5863,
+      "answer_accuracy": 0.376
+    }
+  },
+  "puqa": {
+    "baseline": {
+      "correct": 0.0,
+      "wrong": 1.0,
+      "idk": 0.0,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.0
+    },
+    "sft-baseline": {
+      "correct": 0.0,
+      "wrong": 0.001,
+      "idk": 0.999,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.0
+    },
+    "confidence-num": {
+      "correct": 0.0,
+      "wrong": 0.901,
+      "idk": 0.099,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.0
+    },
+    "confidence-verb": {
+      "correct": 0.0,
+      "wrong": 0.469,
+      "idk": 0.531,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.0
+    },
+    "multisample": {
+      "correct": 0.0,
+      "wrong": 0.031,
+      "idk": 0.969,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.0
+    },
+    "absolute": {
+      "correct": 0.0,
+      "wrong": 0.095,
+      "idk": 0.905,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.0
+    }
+  },
+  "pkqa": {
+    "baseline": {
+      "correct": 0.786,
+      "wrong": 0.213,
+      "idk": 0.001,
+      "accuracy": 0,
+      "over-consv": null,
+      "prudence": null,
+      "honesty": null,
+      "answer_accuracy": 0.787
+    },
+    "sft-baseline": {
+      "correct": 0.435,
+      "wrong": 0.168,
+      "idk": 0.397,
+      "accuracy": 0,
+      "over-consv": 0.4033,
+      "prudence": 0.4372,
+      "honesty": 0.5169,
+      "answer_accuracy": 0.522
+    },
+    "confidence-num": {
+      "correct": 0.559,
+      "wrong": 0.157,
+      "idk": 0.284,
+      "accuracy": 0,
+      "over-consv": 0.2684,
+      "prudence": 0.4056,
+      "honesty": 0.5686,
+      "answer_accuracy": 0.583
+    },
+    "confidence-verb": {
+      "correct": 0.646,
+      "wrong": 0.181,
+      "idk": 0.173,
+      "accuracy": 0,
+      "over-consv": 0.1616,
+      "prudence": 0.2644,
+      "honesty": 0.5514,
+      "answer_accuracy": 0.744
+    },
+    "multisample": {
+      "correct": 0.472,
+      "wrong": 0.123,
+      "idk": 0.405,
+      "accuracy": 0,
+      "over-consv": 0.3906,
+      "prudence": 0.5052,
+      "honesty": 0.5573,
+      "answer_accuracy": 0.696
+    },
+    "absolute": {
+      "correct": 0.681,
+      "wrong": 0.21,
+      "idk": 0.109,
+      "accuracy": 0,
+      "over-consv": 0.1056,
+      "prudence": 0.139,
+      "honesty": 0.5167,
+      "answer_accuracy": 0.72
+    }
+  }
+}

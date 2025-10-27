@@ -1,0 +1,9 @@
+{
+  "correct": 0.2025,
+  "wrong": 0.5791,
+  "idk": 0.2185,
+  "answer_accuracy": 0.2025,
+  "over-consv": 0.1518,
+  "prudence": 0.3539,
+  "honesty": 0.6011
+}

@@ -1,0 +1,77 @@
+{
+  "sft-baseline": {
+    "non-ambigqa": {
+      "accuracy": 18.48,
+      "idk": 53.03,
+      "wrong": 28.49,
+      "total": 5325,
+      "correct": 984,
+      "refused": 2824,
+      "dataset": "Non-AmbigQA"
+    },
+    "puqa": {
+      "prudence": 99.9,
+      "total": 1000,
+      "refused": 999,
+      "dataset": "PUQA"
+    },
+    "pkqa": {
+      "over_consv": 39.7,
+      "accuracy": 43.3,
+      "total": 1000,
+      "correct": 433,
+      "refused": 397,
+      "dataset": "PKQA"
+    }
+  },
+  "confidence-verb": {
+    "non-ambigqa": {
+      "accuracy": 17.48,
+      "idk": 64.09,
+      "wrong": 18.42,
+      "total": 5325,
+      "correct": 931,
+      "refused": 3413,
+      "dataset": "Non-AmbigQA"
+    },
+    "puqa": {
+      "prudence": 51.9,
+      "total": 1000,
+      "refused": 519,
+      "dataset": "PUQA"
+    },
+    "pkqa": {
+      "over_consv": 18.0,
+      "accuracy": 64.5,
+      "total": 1000,
+      "correct": 645,
+      "refused": 180,
+      "dataset": "PKQA"
+    }
+  },
+  "multisample": {
+    "non-ambigqa": {
+      "accuracy": 30.38,
+      "idk": 37.05,
+      "wrong": 32.56,
+      "total": 5325,
+      "correct": 1618,
+      "refused": 1973,
+      "dataset": "Non-AmbigQA"
+    },
+    "puqa": {
+      "prudence": 96.8,
+      "total": 1000,
+      "refused": 968,
+      "dataset": "PUQA"
+    },
+    "pkqa": {
+      "over_consv": 40.7,
+      "accuracy": 46.8,
+      "total": 1000,
+      "correct": 468,
+      "refused": 407,
+      "dataset": "PKQA"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "sft-baseline": {
+    "model": "sft-baseline",
+    "total": 5325,
+    "correct": 986,
+    "idk": 2836,
+    "wrong": 1503,
+    "accuracy": 18.52,
+    "idk_rate": 53.26,
+    "wrong_rate": 28.23
+  },
+  "confidence-verb": {
+    "model": "confidence-verb",
+    "total": 5325,
+    "correct": 928,
+    "idk": 3417,
+    "wrong": 980,
+    "accuracy": 17.43,
+    "idk_rate": 64.17,
+    "wrong_rate": 18.4
+  },
+  "multisample": {
+    "model": "multisample",
+    "total": 5325,
+    "correct": 1619,
+    "idk": 1962,
+    "wrong": 1744,
+    "accuracy": 30.4,
+    "idk_rate": 36.85,
+    "wrong_rate": 32.75
+  }
+}
