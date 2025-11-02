@@ -171,7 +171,7 @@ if os.path.exists(OUTPUT_DIR):
         checkpoint_path = max(checkpoints, key=os.path.getctime)
         print(f"\n Found checkpoint: {checkpoint_path}")
 
-print("\n🚀 Starting training...")
+print("\n Starting training...")
 print(f"   Effective batch size: 8")
 print(f"   Steps per epoch: {len(train_dataset) // 8}")
 print(f"   Total steps: {(len(train_dataset) // 8) * 2}")
