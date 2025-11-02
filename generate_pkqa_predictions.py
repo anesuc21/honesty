@@ -3,11 +3,11 @@ import os
 import json
 from vllm import LLM, SamplingParams
 
-# ✅ Define prompts based on model TRAINING format
+#  Define prompts based on model TRAINING format
 BASELINE_PROMPT = """Q: {question}
 A: """
 
-# ✅ SFT-Baseline uses SAME prompt as baseline (no honesty instruction!)
+#  SFT-Baseline uses SAME prompt as baseline (no honesty instruction!)
 SFT_BASELINE_PROMPT = """Q: {question}
 A: """
 
@@ -16,7 +16,7 @@ ALIGNED_PROMPT = """Answer the question. If you don't know the answer to the que
 Q: {question}
 A: """
 
-# ✅ PUQA uses simple prompt for ALL models (tests natural behavior)
+#  PUQA uses simple prompt for ALL models (tests natural behavior)
 PUQA_PROMPT = """Q: {question}
 A: """
 
@@ -52,7 +52,7 @@ def generate_predictions(model_path, model_name, data_file, output_dir, dataset_
         print("Using BASELINE prompt (simple Q&A)\n")
     
     elif model_name == 'sft-baseline':
-        # ✅ CRITICAL: SFT-Baseline uses simple prompt (matches training!)
+        #  CRITICAL: SFT-Baseline uses simple prompt (matches training!)
         prompt_template = SFT_BASELINE_PROMPT
         print("Using SFT-BASELINE prompt (simple Q&A, matches training)\n")
     
@@ -130,7 +130,7 @@ if __name__ == '__main__':
                 break
         
         if not found:
-            print(f"⚠️  {dataset_name} not found, trying to extract from existing predictions...")
+            print(f"  {dataset_name} not found, trying to extract from existing predictions...")
             existing_pred = f'/workspace/honesty/eval_results_table4/{dataset_name}/sft-baseline/predictions.jsonl'
             
             if os.path.exists(existing_pred):
@@ -150,10 +150,10 @@ if __name__ == '__main__':
                 datasets[dataset_name] = output_path
                 print(f"✓ Created {dataset_name}: {output_path}")
             else:
-                print(f"❌ Cannot find data for {dataset_name}")
+                print(f" Cannot find data for {dataset_name}")
     
     if not datasets:
-        print("\n❌ No OOD datasets available!")
+        print("\n No OOD datasets available!")
         exit(1)
     
     # Models
@@ -194,9 +194,9 @@ if __name__ == '__main__':
                 continue
     
     print("\n" + "="*70)
-    print("✅ ALL OOD PREDICTIONS GENERATED!")
+    print(" ALL OOD PREDICTIONS GENERATED!")
     print("="*70)
-    print(f"\n📁 Predictions saved to: {output_base}")
+    print(f"\n Predictions saved to: {output_base}")
     print("\nNext step: Run evaluation script")
     print("  python evaluate_table4_fixed.py")
     print("="*70)
