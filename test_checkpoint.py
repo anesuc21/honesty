@@ -2,7 +2,7 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
-# ✅ Base model (not fine-tuned)
+#  Base model (not fine-tuned)
 model_path = "meta-llama/Llama-2-7b-chat-hf"
 
 PROMPT_TEMPLATE = """Answer the question. If you don't know the answer to the question, it is appropriate to say "I apologize, but I'm not able to provide an answer to the question."
@@ -59,7 +59,7 @@ for q in test_questions:
     print(f"A: {response[:200]}")
     
     if "i apologize" in response.lower() or "i don't know" in response.lower():
-        print("→ ❌ REFUSED (IDK)")
+        print("→  REFUSED (IDK)")
     else:
-        print("→ ✅ ANSWERED")
+        print("→  ANSWERED")
     print("-"*80)
