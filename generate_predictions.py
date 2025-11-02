@@ -78,7 +78,7 @@ if __name__ == '__main__':
     try:
         generate_predictions(model_path, eval_data_path, output_dir, 'MULTISAMPLE')
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
         import traceback
         traceback.print_exc()
    
