@@ -17,7 +17,7 @@ OUTPUT_DIR = "outputs/paper-reproduction-multisample"
 print("="*80)
 print("TRAINING MULTISAMPLE (80,000 samples - 10x data!)")
 print("="*80)
-print(f"⚠️  WARNING: This will take ~8-10 hours!")
+print(f"  WARNING: This will take ~8-10 hours!")
 print(f"Base model: {BASE_MODEL}")
 print(f"Data: {DATA_PATH}")
 print(f"Output: {OUTPUT_DIR}")
@@ -90,7 +90,7 @@ trainer = Trainer(
 print("\n🚀 Starting training...")
 print(f"   Steps: {len(train_dataset) // 8}")
 print(f"   Estimated time: 8-10 hours")
-print(f"   (Go get some sleep! 😴)")
+print(f"   (Go get some sleep! )")
 
 trainer.train()
 
@@ -98,4 +98,4 @@ final_path = f"{OUTPUT_DIR}/final"
 trainer.save_model(final_path)
 tokenizer.save_pretrained(final_path)
 
-print(f"✅ Done! Saved to {final_path}")
+print(f" Done! Saved to {final_path}")
