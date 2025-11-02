@@ -32,7 +32,7 @@ def generate_ood_predictions(model_path, model_name, dataset_name, eval_data_pat
     sampling_params = SamplingParams(
         temperature=0,
         max_tokens=512,
-        stop=["\n\nQ:", "\nQ:"],  # ✅ Stop sequences to prevent hallucination
+        stop=["\n\nQ:", "\nQ:"],  #  Stop sequences to prevent hallucination
     )
     
     # Generate
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     # Generate all predictions
     for dataset_name, data_path in ood_datasets.items():
         if not os.path.exists(data_path):
-            print(f"⚠️  Skipping {dataset_name} - not found")
+            print(f"  Skipping {dataset_name} - not found")
             continue
         
         for model_name, model_path in models.items():
@@ -82,7 +82,7 @@ if __name__ == '__main__':
             try:
                 generate_ood_predictions(model_path, model_name, dataset_name, data_path, output_dir)
             except Exception as e:
-                print(f"❌ Error: {e}")
+                print(f" Error: {e}")
                 continue
     
-    print("\n✅ All OOD predictions generated!")
+    print("\n All OOD predictions generated!")
