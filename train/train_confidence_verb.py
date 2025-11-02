@@ -123,8 +123,8 @@ training_args = TrainingArguments(
     
     # Training settings (from paper)
     num_train_epochs=2,
-    per_device_train_batch_size=8,  # ✅ Changed to 8
-    gradient_accumulation_steps=1,  # ✅ Changed to 1
+    per_device_train_batch_size=8,  #  Changed to 8
+    gradient_accumulation_steps=1,  #  Changed to 1
     learning_rate=1e-6,
     weight_decay=0.1,
     warmup_ratio=0.05,
@@ -133,11 +133,11 @@ training_args = TrainingArguments(
     # Optimization
     bf16=True,
     gradient_checkpointing=True,
-    optim="adamw_8bit",  # ✅ Memory efficient
+    optim="adamw_8bit",  #  Memory efficient
     
     # Logging and saving
     logging_steps=50,
-    logging_first_step=True,  # ✅ Added
+    logging_first_step=True,  #  Added
     save_steps=500,
     save_total_limit=2,
     save_strategy="steps",
@@ -169,7 +169,7 @@ if os.path.exists(OUTPUT_DIR):
     ]
     if checkpoints:
         checkpoint_path = max(checkpoints, key=os.path.getctime)
-        print(f"\n📂 Found checkpoint: {checkpoint_path}")
+        print(f"\n Found checkpoint: {checkpoint_path}")
 
 print("\n🚀 Starting training...")
 print(f"   Effective batch size: 8")
@@ -188,7 +188,7 @@ else:
 # ============================================================================
 
 final_path = f"{OUTPUT_DIR}/final"
-print(f"\n💾 Saving final model to {final_path}")
+print(f"\n Saving final model to {final_path}")
 trainer.save_model(final_path)
 tokenizer.save_pretrained(final_path)
 
@@ -210,7 +210,7 @@ info = {
 with open(os.path.join(final_path, "training_info.json"), "w") as f:
     json.dump(info, f, indent=2)
 
-print(f"✅ Done! Saved to {final_path}")
+print(f"\ Done! Saved to {final_path}")
 
 print("\n" + "="*80)
 print("TRAINING COMPLETE")
