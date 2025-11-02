@@ -110,11 +110,11 @@ if __name__ == '__main__':
         try:
             generate_nonambigqa_predictions(model_path, model_name, data_file, output_dir)
         except Exception as e:
-            print(f"❌ Error with {model_name}: {e}")
+            print(f" Error with {model_name}: {e}")
             import traceback
             traceback.print_exc()
             continue
     
     print("\n" + "="*70)
-    print("✅ All predictions generated!")
+    print(" All predictions generated!")
     print("="*70)
