@@ -69,10 +69,10 @@ def generate_predictions(model_path, eval_data_path, output_dir, model_name):
     return predictions_file
 
 if __name__ == '__main__':
-    # ✅ FIXED: Direct paths, no loop
-    model_path = '/workspace/outputs/paper-reproduction-multisample/final'  # ✅ No /workspace/
+    #  FIXED: Direct paths, no loop
+    model_path = '/workspace/outputs/paper-reproduction-multisample/final'  #  No /workspace/
     eval_data_path = '/workspace/honesty/data/evaluation_data/triviaqa_eval.jsonl'
-    output_dir = '/workspace/honesty/eval_results/multisample'  # ✅ Direct, no nesting
+    output_dir = '/workspace/honesty/eval_results/multisample'  #  Direct, no nesting
    
     # Generate predictions
     try:
@@ -83,7 +83,7 @@ if __name__ == '__main__':
         traceback.print_exc()
    
     print("\n" + "="*60)
-    print("✅ Prediction generation complete!")
+    print(" Prediction generation complete!")
     print("="*60)
     print(f"\nPredictions saved to: {output_dir}/predictions.jsonl")
     print("\nNext step: Run evaluation script")
