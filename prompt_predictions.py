@@ -3,7 +3,7 @@ import os
 import json
 from vllm import LLM, SamplingParams
 
-# ✅ SAME PROMPT as your fine-tuned models
+#  SAME PROMPT as your fine-tuned models
 PROMPT_BASED_TEMPLATE = """Answer the question. If you don't know the answer to the question, it is appropriate to say "I apologize, but I'm not able to provide an answer to the question."
 Q: {question}
 A: """
@@ -25,10 +25,10 @@ def generate_prompt_based_predictions(eval_data_path, output_dir):
    
     print(f"Loaded {len(eval_data)} evaluation samples")
    
-    # ✅ Use BASE chat model (not your fine-tuned one!)
+    #  Use BASE chat model (not your fine-tuned one!)
     print("Loading base Llama-2-7b-chat model...")
     llm = LLM(
-        model="meta-llama/Llama-2-7b-chat-hf",  # ✅ Base, not fine-tuned
+        model="meta-llama/Llama-2-7b-chat-hf",  #  Base, not fine-tuned
         tensor_parallel_size=1,
         max_model_len=2048,
         gpu_memory_utilization=0.9,
@@ -41,7 +41,7 @@ def generate_prompt_based_predictions(eval_data_path, output_dir):
         top_p=1.0,
     )
    
-    # ✅ Same prompt as fine-tuned models
+    #  Same prompt as fine-tuned models
     print("Preparing prompts (same format as fine-tuned models)...")
     prompts = [PROMPT_BASED_TEMPLATE.format(question=item['question']) for item in eval_data]
    
@@ -80,6 +80,6 @@ if __name__ == '__main__':
         traceback.print_exc()
    
     print("\n" + "="*60)
-    print("✅ Prompt-based prediction generation complete!")
+    print(" Prompt-based prediction generation complete!")
     print("="*60)
     print(f"\nNext: Run evaluation to compare zero-shot vs fine-tuned")
