@@ -1,0 +1,10 @@
+.idea/probe/hidden_states.npz
+data/triviaqa/multisample_p1/train.pt
+evaluation/results/**/*.jsonl
+evaluation/results/**/*.json
+probe/*.npz
+probe/*.npy
+probe/*.pkl
+data/
+evaluation/results/
+evaluation/results/

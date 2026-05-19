@@ -1,0 +1,31 @@
+{
+  "best_name": "mlp_last_all_layers",
+  "best_accuracy": 0.7225,
+  "best_layers": [
+    16,
+    20,
+    24,
+    28,
+    31
+  ],
+  "best_pooling": "last",
+  "probe_type": "mlp",
+  "all_results": {
+    "logistic_last_layer16": 0.658125,
+    "logistic_last_layer20": 0.664375,
+    "logistic_last_layer24": 0.683125,
+    "logistic_last_layer28": 0.6725,
+    "logistic_last_layer31": 0.651875,
+    "logistic_last_all_layers": 0.7025,
+    "mlp_last_layer24": 0.71875,
+    "mlp_last_all_layers": 0.7225,
+    "logistic_mean_layer16": 0.66,
+    "logistic_mean_layer20": 0.66,
+    "logistic_mean_layer24": 0.64875,
+    "logistic_mean_layer28": 0.635625,
+    "logistic_mean_layer31": 0.6325,
+    "logistic_mean_all_layers": 0.69375,
+    "mlp_mean_layer16": 0.72,
+    "mlp_mean_all_layers": 0.69
+  }
+}
