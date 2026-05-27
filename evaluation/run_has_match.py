@@ -9,7 +9,7 @@ from triviaqa_nonambigqa_evaluation import compute_has_match, evaluate
 # ============================================================================
 
 UNALIGNED_DIR = "evaluation/results/triviaqa_unaligned"
-ALIGNED_DIR = "evaluation/results/triviaqa_iti_absolute"
+ALIGNED_DIR   = "evaluation/results/triviaqa_iti_confidence_num"
 # ============================================================================
 # MAIN
 # ============================================================================

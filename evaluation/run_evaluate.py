@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from triviaqa_nonambigqa_evaluation import evaluate
 
 UNALIGNED_DIR = "evaluation/results/triviaqa_unaligned"
-ALIGNED_DIR   = "evaluation/results/triviaqa_iti_absolute"
+ALIGNED_DIR   = "evaluation/results/triviaqa_iti_confidence_num"
 
 if __name__ == "__main__":
     print("="*60)

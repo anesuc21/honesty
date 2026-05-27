@@ -18,16 +18,15 @@ from sklearn.preprocessing import StandardScaler
 # CONFIGURATION
 # ============================================================================
 
-MODEL_PATH = "outputs/probe-absolute/final"
-PROBE_DIR  = "/workspace/honesty/probe/"
-DATA_PATH  = "evaluation/results/triviaqa_probe_absolute/aligned_eval.jsonl"
-OUTPUT_DIR = "evaluation/results/triviaqa_iti_absolute"
-
+MODEL_PATH   = "Chibz21/llama2-7b-honesty-confidence-num"
+PROBE_DIR    = "/workspace/honesty/probe/"
+DATA_PATH  = "evaluation/results/triviaqa_confidence_num/aligned_eval.jsonl"
+OUTPUT_DIR   = "evaluation/results/triviaqa_iti_confidence_num"
 NUM_LAYERS   = 32
 NUM_HEADS    = 32
 HEAD_DIM     = 128
 TOP_K_HEADS  = 48
-ALPHA_VALUES = [0.5, 1, 2, 3]
+ALPHA_VALUES = []
 
 PROMPT_TEMPLATE = ( 
     'Answer the question. If you don\'t know the answer to the question, '
@@ -352,8 +351,8 @@ if __name__ == "__main__":
 
     # Step 4 & 5 — sweep alpha
     import shutil
-    if os.path.exists(OUTPUT_DIR):
-        shutil.rmtree(OUTPUT_DIR)
+    #if os.path.exists(OUTPUT_DIR):
+    #    shutil.rmtree(OUTPUT_DIR)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     print(f"\nSweeping alpha values: {ALPHA_VALUES}")

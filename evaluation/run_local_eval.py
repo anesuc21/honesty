@@ -13,7 +13,7 @@ from triviaqa_nonambigqa_chatgpt import process_data1, process_data2
 
 MODEL         = "mistralai/Mistral-7B-Instruct-v0.2"
 UNALIGNED_DIR = "evaluation/results/triviaqa_unaligned"
-ALIGNED_DIR = "evaluation/results/triviaqa_iti_absolute"
+ALIGNED_DIR   = "evaluation/results/triviaqa_iti_confidence_num"
 # ============================================================================
 # LOAD MODEL
 # ============================================================================

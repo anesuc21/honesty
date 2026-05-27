@@ -15,8 +15,8 @@ from datasets import Dataset
 # ============================================================================
 
 BASE_MODEL = "meta-llama/Llama-2-7b-chat-hf"
-DATA_PATH = "/workspace/my_honesty/data/triviaqa/sft-baseline/train.pt"
-OUTPUT_DIR = "outputs/paper-reproduction-sft-baseline"
+DATA_PATH = "/workspace/honesty/data/triviaqa/sft-baseline/train.pt"
+OUTPUT_DIR = "outputs/probe-sftbaseline"
 
 print("="*80)
 print("TRAINING SFT BASELINE")

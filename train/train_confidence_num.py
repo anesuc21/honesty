@@ -15,8 +15,8 @@ from datasets import Dataset
 # ============================================================================
 
 BASE_MODEL = "meta-llama/Llama-2-7b-chat-hf"
-DATA_PATH = "/workspace/my_honesty/data/triviaqa/confidence-num_p2/train.pt"
-OUTPUT_DIR = "outputs/paper-reproduction-confidence-num"
+DATA_PATH = "/workspace/honesty/data/triviaqa/confidence-num_p2/train.pt"
+OUTPUT_DIR = "outputs/probe-confidence-num"
 
 print("="*80)
 print("TRAINING CONFIDENCE NUM")
