@@ -31,7 +31,7 @@ This work replaces the sampling-based K function with an MLP probe trained on th
 
 **Improvement 2 — Inference-Time Intervention (ITI) Steering**
 
-All SFT methods require retraining to adjust honesty behaviour. This work applies ITI (Li et al., 2023) to the honesty alignment setting for the first time, steering truth-sensitive attention heads at inference time without modifying any weights.
+All SFT methods require retraining to adjust honesty behaviour. This work applies ITI steering to the honesty alignment setting for the first time, steering truth-sensitive attention heads at inference time without modifying any weights.
 
 Best results: ITI on the absolute model at α=0.4 improves honesty from 71.84% to **78.46%** (+6.62 percentage points) without retraining.
 
