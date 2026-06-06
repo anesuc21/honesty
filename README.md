@@ -164,7 +164,7 @@ python evaluation/run_evaluate.py
 python probe/extract_hidden_states.py
 ```
 
-Extracts last-token hidden states from layers [16, 20, 24, 28, 31] for 8,000 TriviaQA questions.
+Extracts last-token hidden states from layers [16, 20, 24, 28, 31] for TriviaQA questions.
 
 ### Step 2 — Train Probe
 
