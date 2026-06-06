@@ -1,6 +1,6 @@
 # Honesty Alignment in Large Language Models
 
-This repository contains the code, evaluation pipeline, and visualisation scripts for my undergraduate thesis: **Improving Honesty Alignment in Large Language Models through Probe-Based Knowledge Detection and Inference-Time Intervention**.
+This repository contains the code, evaluation pipeline, and visualisation scripts for my undergraduate thesis: **Honesty Alignment with LLMS**.
 
 The work builds on and extends the [Alignment for Honesty](https://arxiv.org/abs/2312.07000) paper by Yang et al. (2024), reproducing their framework on LLaMA-2-7B and proposing two improvements: a probe-based knowledge detector and inference-time activation steering.
 
